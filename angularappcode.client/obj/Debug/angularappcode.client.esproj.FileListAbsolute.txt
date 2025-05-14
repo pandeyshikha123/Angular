@@ -1,0 +1,2 @@
+C:\Users\admin\Desktop\C#\AngularAppCode\angularappcode.client\obj\Debug\angularappcode.client.esproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\AngularAppCode\angularappcode.client\obj\Debug\angularappcode.client.esproj.CoreCompileInputs.cache

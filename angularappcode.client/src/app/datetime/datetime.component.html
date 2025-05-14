@@ -1,0 +1,21 @@
+<div class="container">
+
+  <h3>Local Time:</h3>
+  <p>{{ localDateTime }}</p>
+
+  <!-- Show the timezone selector only when the user clicks the button -->
+  <button (click)="toggleTimezoneSelector()" class="timezone-button">
+    Choose Timezone
+  </button>
+
+  <!-- The timezone dropdown will be shown only when showTimezoneSelector is true --> 
+  <div *ngIf="showTimezoneSelector"> 
+    <h3> Selected Timezone ({{ selectedZone }}):</h3>
+    <p>{{ selectedDateTime }}</p>
+
+    <label for="timezone">Choose Timezone:</label>
+    <select id="timezone" [(ngModel)]="selectedZone" (change)="onZoneChange()">
+      <option *ngFor="let zone of timezones" [value]="zone">{{ zone }}</option>
+    </select>
+  </div>
+</div>
